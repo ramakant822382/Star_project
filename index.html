@@ -23,45 +23,48 @@
     <script>
       var i, j, k;
       star="";
+
+      //Upside pyramid
       for (i = 1; i <= 5; i++) {
         for (k = 1; k <= 5 - i; k++) {
-         // document.write("&nbsp;&nbsp");
+         //Printing space
          star+="&nbsp;&nbsp";
         }
+        //this loop using genrate Star
         for (j = 1; j <= i; j++) {
-          //document.write("*");
+          //Printing Star
           star+="*"
         }
         for (l = 2; l <= i; l++) {
-          //document.write("*");
+       //printing star
           star+="*"
         }
 
-       // document.write("<br>");
+      
        star+="<br>"
       }
 
-      //down Star
+      //down side pyramid
 
       var x = 5;
       
       for (let i = x - 1; i >= 1; i--) {
         for (let k = 1; k <= x - i; k++) {
-          //document.write("&nbsp;&nbsp");
+          //Printing space
           star+="&nbsp;&nbsp";
         }
         for (let j = 1; j <= i; j++) {
-          //document.write("*");
+          //Printing Star
           star+="*"
         }
         for (let l = 1; l <= i - 1; l++) {
-          //document.write("*");
+          // Printing Star
           star+="*"
         }
-        //document.write("<br>");
+       
         star+="<br>"
       }
-
+//Completed up pyramid and down Pyramid
       document.getElementById("star").innerHTML=star
     </script>
   </body>
